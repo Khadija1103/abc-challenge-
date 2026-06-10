@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <h1>ABC Challenge</h1>
+    <div id="contador">Letras vistas: 0</div>
+  </nav>
+
+  <div class="filtros">
+    <button onclick="filtrar('todas')">Todas</button>
+    <button onclick="filtrar('vocales')">Vocales</button>
+    <button onclick="reiniciarJuego()">Reiniciar</button>
+    <button onclick="salirJuego()">Salir</button>
+  </div>
+
+  <section class="galeria" id="galeria"></section>
+
+  <section class="equipo">
+    <h2>Equipo de Rescate</h2>
+    <p><strong>Tatiana Marrugo Jiménez</strong></p>
+    <p>Desarrollo HTML, CSS, JavaScript, GitHub y pruebas.</p>
+  </section>
+
+  <audio id="sonido" preload="auto">
+    <source src="sonidos/click.mp3" type="audio/mpeg">
+  </audio>
+
+ <script src="script.js"></script>
+</body>
+</html>
